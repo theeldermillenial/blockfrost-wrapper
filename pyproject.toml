@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "blockfrost-limiter"
+version = "0.1.0"
+description = ""
+authors = ["ElderMillenial <eldermillenial@protonmail.com>"]
+readme = "README.md"
+packages = [{include = "blockfrost_limiter", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+python-dotenv = "^1.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+datamodel-code-generator = "^0.19.0"
+nox = "^2023.4.22"
+nox-poetry = "^1.0.2"
+pre-commit = "^3.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
